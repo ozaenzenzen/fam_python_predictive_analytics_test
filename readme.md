@@ -138,6 +138,28 @@ Langkah dalam persiapan data dijabarkan dalam beberapa poin
     - Alasan: Proses standarisasi data dilakukan agar rentang nilai pada kolom `balance` tidak terlampau jauh dan agar menyelaraskan dengan kolom dataset lain
 
 ## Modeling
+Algoritma Penelitian ini melakukan pemodelan dengan 4 algoritma, yaitu K-Nearest Neighbour, Random Forest, dan Linear Regression
+
+- K-Nearest Neighbour K-Nearest Neighbour bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat. Proyek ini menggunakan sklearn.neighbors.KNeighborsRegressor dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah :
+
+    - `n_neighbors = Jumlah k tetangga tedekat.`
+
+- Random Forest Algoritma random forest adalah teknik dalam machine learning dengan metode ensemble. Teknik ini beroperasi dengan membangun banyak decision tree pada waktu pelatihan. Proyek ini menggunakan sklearn.ensemble.RandomForestRegressor dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah :
+
+    - `n_estimators = Jumlah maksimum estimator di mana boosting dihentikan.`
+    - `max_depth = Kedalaman maksimum setiap tree.`
+    - `random_state = Mengontrol seed acak yang diberikan pada setiap base_estimator pada setiap iterasi boosting.`
+
+- Adaboost AdaBoost juga disebut Adaptive Boosting adalah teknik dalam machine learning dengan metode ensemble. Algoritma yang paling umum digunakan dengan AdaBoost adalah pohon keputusan (decision trees) satu tingkat yang berarti memiliki pohon Keputusan dengan hanya 1 split. Pohon-pohon ini juga disebut Decision Stumps. Algoritma ini bertujuan untuk meningkatkan performa atau akurasi prediksi dengan cara menggabungkan beberapa model sederhana dan dianggap lemah (weak learners) secara berurutan sehingga membentuk suatu model yang kuat (strong ensemble learner). Proyek ini menggunakan sklearn.ensemble.AdaBoostRegressor dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah :
+
+    - `n_estimators = Jumlah maksimum estimator di mana boosting dihentikan.`
+    - `learning_rate = Learning rate memperkuat kontribusi setiap regressor.`
+    - `random_state = Mengontrol seed acak yang diberikan pada setiap base_estimator pada setiap iterasi boosting.`
+    
+- Linear Regression. Metode  peramalan  Regresi  Linear  merupakan  metode  peramalan  yang  menggunakan  garis  lurus  untuk menggambarkan dua variabel atau lebih. Regresi Linier menggunakan pola sederhana dengan mengasumsikan bahwa 2 variable dapat dinyatakan dengan suatu garis lurus dengan rumusan. Parameter yang digunakan pada penelitian ini adalah :
+
+    - `fit_intercept =  Intercept merupakan titik dimana garis regresi akan memotong sumbu y ketika x bernilai sama dengan 0.`  
+
 Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
 
 **Rubrik/Kriteria Tambahan (Opsional)**: 
@@ -146,6 +168,16 @@ Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyel
 - Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. **Jelaskan mengapa memilih model tersebut sebagai model terbaik**.
 
 ## Evaluation
+Metrik evaluasi yang digunakan pada proyek ini adalah akurasi, mean squared error (MSE) dan R square (coefficient of determination). 
+- Akurasi menentukan tingkat kemiripan antara hasil prediksi dengan nilai yang sebenarnya (y_test). 
+- Mean squared error (MSE) mengukur error dalam model statistik dengan cara menghitung rata-rata error dari kuadrat hasil aktual dikurang hasil prediksi. 
+- R square merupakan suatu nilai yang memperlihatkan seberapa besar variabel independen (eksogen) mempengaruhi variabel dependen (endogen). R squared merupakan angka yang berkisar antara 0 sampai 1 yang mengindikasikan besarnya kombinasi variabel independen secara bersama – sama mempengaruhi nilai variabel dependen. Nilai R-squared (R2) digunakan untuk menilai seberapa besar pengaruh variabel laten independen tertentu terhadap variabel laten dependen. Berikut formula MSE :
+
+Berikut hasil evaluasi
+- Akurasi
+- Mean Squred Error (MSE)
+- R square
+
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
 
 Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
