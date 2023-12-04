@@ -1,4 +1,4 @@
-# Comparison KNN, Random Forest, and Boosting Algorithm algorithm of Customer Churn Dataset  - Fauzan Akmal Mahdi
+# Comparison KNN, Random Forest, Boosting Algorithm, and Linear Regression algorithm of Customer Churn Dataset  - Fauzan Akmal Mahdi
 
 ## Domain Proyek
 ***
@@ -7,8 +7,6 @@
 Dalam beberapa bidang kehidupan, khususnya dalam perusahaan bidang keuangan / finansial, data mengenai penghasilan individu merupakan sebuah hal yang dibutuhkan. Beberapa perusahaan dalam membutuhkan data mengenai penghasilan untuk memetakan karakter dan kemampuan individu, sebagai contoh pada bidang Human Resources untuk memetakan kemampuan dan rentang penghasilan pada individu yang melamar kerja. Pada contoh lain yaitu Bank, data pengahasilan individu digunakan untuk memetakan kemampuan bayar dari individu. Dengan bantuan teknologi, lebih khususnya penggunaan Machine Learning, penarikan informasi dari sebuah data menjadi lebih efektif dan efisien. Pada penelitian ini ditujukan membandingkan kemampuan metode machine learning dalam memetakan estimasi pendapatan (estimated salary) dari data mengenai kemampuan bayar individu. Selanjutnya, metode terbaik dari penelitian ini dapat digunakan untuk melakukan pemodelan terhadap data penghasilan yang lain.
 
 Dataset merupakan koleksi data yang berfokus kepada prediksi customer churn. Dataset berisi berbagai fitur yang menggambarkan setiap customer, seperti  credit score, country, gender, age, tenure, balance, number of products, credit card status, active membership, estimated salary, and churn status. Status churn menunjukkan apakah pelanggan telah melakukan churn atau belum. Kumpulan data ini digunakan untuk menganalisis dan memahami faktor-faktor yang berkontribusi terhadap churn pelanggan dan untuk membangun model prediktif guna mengidentifikasi pelanggan yang berisiko churn. Tujuannya adalah untuk melakukan estimasi salary terhadap customer guna menemukan rentang salary dari setiap customer.
-
-*XXTujuannya adalah untuk mengembangkan strategi dan intervensi untuk mengurangi churn dan meningkatkan retensi pelangganXX* 
 
 ## Business Understanding
 
